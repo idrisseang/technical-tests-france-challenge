@@ -1,5 +1,5 @@
-import "./App.css";
-import { orders, products, sellers } from "./exercice2/data";
+import "../App.css";
+import { orders, products, sellers } from "./data";
 
 function SellerRevenueDisplay() {
   const calculSellerCa = (sellerId) => {
