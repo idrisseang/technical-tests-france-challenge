@@ -24,11 +24,7 @@ function SellerRevenueDisplay() {
   return (
     <div>
       <h1>CA vendeurs :</h1>
-      {sellers.map((seller) => (
-        <p key={seller.id}>
-          {seller.firstname} {seller.lastname} : {calculSellerCa(seller.id)} €
-        </p>
-      ))}
+      <ul>{/* Afficher chaque vendeur et son chiffre d'affaire */}</ul>
     </div>
   );
 }
