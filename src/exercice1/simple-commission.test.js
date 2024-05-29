@@ -54,12 +54,17 @@ test("Group 1 with CA = 1000", () => {
   });
 });
 
+/* Note : erreur sur ce test c'est avec le groupe 2 que ça retourne {0,0}
+avec le groupe 1 {2.5, 12.5}
+*/
 test("Group 1 with CA = 1000", () => {
   expect(getCommission(500, group1)).toStrictEqual({
     commission_taux: 0,
     commission_amount: 0,
   });
 });
+
+
 
 test("Group 1 with CA = 2000", () => {
   expect(getCommission(2000, group2)).toStrictEqual({
