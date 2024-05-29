@@ -13,7 +13,7 @@ function SellerRevenueDisplay() {
           );
           return (
             orderTotal +
-            parseInt(productInfo.price) * currentOrderProduct.quantity
+            productInfo.price * currentOrderProduct.quantity
           );
         }, 0)
       );
@@ -24,7 +24,15 @@ function SellerRevenueDisplay() {
   return (
     <div>
       <h1>CA vendeurs :</h1>
-      <ul>{/* Afficher chaque vendeur et son chiffre d'affaire */}</ul>
+      <ul>
+        {
+          sellers.map((seller) => {
+            return <li key={seller.id}>
+              {seller.firstname} {seller.lastname} - CA : {calculSellerCa(seller.id)} €
+            </li>
+          })
+        }
+      </ul>
     </div>
   );
 }

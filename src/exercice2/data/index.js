@@ -5,8 +5,8 @@ export const sellers = [
 ];
 
 export const products = [
-  { id: "1", name: "Bananes", price: "3.5" },
-  { id: "2", name: "Clementines", price: "6" },
+  { id: 1, name: "Bananes", price: "3.5" },
+  { id: 2, name: "Clementines", price: "6" },
 ];
 
 export const orders = [
